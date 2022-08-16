@@ -1,2 +1,15 @@
-package yang.gradle.controller;public class HelloController {
+package yang.gradle.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class HelloController {
+
+    @RequestMapping("/sayHello")
+    public String sayHello(){
+        return "hello";
+
+    }
+
 }
